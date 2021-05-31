@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Merge PR Auto Step
-        uses: pym7857/DXLabelAutoPR@1.0.0
+        uses: LS-ELLO/DXLabelAutoPR@1.0.0
         with:
           # Event Trigger 라벨 이름을 설정합니다. 디폴트는 "DXLabel" 입니다.
           label-name:
