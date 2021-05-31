@@ -1,0 +1,24 @@
+name: "DXLabelAutoPR"
+description: "PR라벨을 이용해 자동으로 머지 작업을 해줍니다"
+inputs:
+  label-name:
+    description: "자동으로 PR Merge를 원할때, 붙이는 Label Name"
+    required: false
+    default: "DXLabel"
+  reviewers-number:
+    description: "자동으로 PR Merge를 하기 위한 Reviewers의 숫자"
+    required: false
+    default: "1"
+  merge-method:
+    description: merge method; merge, squash or rebase.
+    required: false
+    default: "merge"
+  github-token:
+    description: GitHub Secret Token
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
+branding:
+  icon: "git-merge"
+  color: "green"
